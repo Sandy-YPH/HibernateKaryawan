@@ -45,6 +45,6 @@ CREATE TABLE karyawan (
 );
 ```
 
-## Query Pembuatan Tabel
+## Author
 
 Sandy (51422508)
