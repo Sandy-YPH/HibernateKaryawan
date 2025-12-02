@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Karyawan" table="karyawan" catalog="db_karyawan">
+
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+
+        <property name="nip" type="string">
+            <column name="nip" length="20" not-null="true"/>
+        </property>
+
+        <property name="nama" type="string">
+            <column name="nama" length="100" not-null="true"/>
+        </property>
+
+        <property name="jabatan" type="string">
+            <column name="jabatan" length="50" not-null="true"/>
+        </property>
+
+        <property name="gaji" type="double">
+            <column name="gaji" not-null="true"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
